@@ -1,8 +1,13 @@
 import ballerina/http;
+import ballerina/log;
+
+
+configurable string message = ?;
 
 service /covid/status on new http:Listener(9000) {
 
     resource function get countries() returns CovidEntry[] {
+        log:printInfo(message);
         return covidTable.toArray();
     }
 
