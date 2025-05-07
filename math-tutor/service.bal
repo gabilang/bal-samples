@@ -12,7 +12,7 @@ final agent:Agent agent = check new (
         role: "Math Tutor",
         instructions: "You are a school tutor assistant. " +
         "Provide answers to students' questions so they can compare their answers. " +
-        "Use the tools when there is query related to math"
+        "Use the tools when there is a query related to math"
     },
     model = model,
     tools = [sum, mult, sqrt],
